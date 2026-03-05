@@ -1,1 +1,18 @@
-<p>imagen works!</p>
+<!-- contenedor para la escena 3D -->
+<div #container class="scene-container"></div>
+
+<!-- login como overlay -->
+<div class="login-overlay">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <label>
+      Usuario:
+      <input type="text" [(ngModel)]="username" name="username" required />
+    </label>
+    <label>
+      Contraseña:
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </label>
+    <button type="submit">Entrar</button>
+  </form>
+</div>
