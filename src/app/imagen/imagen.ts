@@ -49,7 +49,7 @@ export class Imagen implements AfterViewInit {
 
     const loader = new THREE.TextureLoader();
     loader.load('/fondoA.jpg', (texture) => {
-
+//comentario
       texture.colorSpace = THREE.SRGBColorSpace;
 
 const geometry = new THREE.SphereGeometry(50, 64, 64);
